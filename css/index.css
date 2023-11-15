@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Schoolbell&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    height: 100vh;
+    background: hsl(194.37,85.54%,16.27%);
+    width: 100%;
+    position: relative;
+}
+
+nav{   
+    width: 100%;     
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: hsl(194.37,85.54%,16.27%);
+    z-index: 78;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a{
+    color: #A1B5BB;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact{
+   background: #145E76;
+   padding: 10px 20px;
+   border-radius: 25px;
+   border: none;
+   color: white;
+   font-size: 13px;
+}
+
+.contact:hover{
+    background: white;
+    color: #145E76;
+}
+
+@media (max-width:700px){
+    .nav-links{
+        display: none;
+    }
+}
+
+.hero{
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: calc(100vh - 100px);
+}
+
+.hero-left{
+    width: 50%;
+    color: white;
+}
+
+.hero-right{
+    width: 38%;
+}
+
+.hero-right img{
+    width: 100%;
+}
+
+.myself{
+    padding: 10px 20px;
+    background: #124756;
+    border-radius: 30px;
+    font-family: 'Schoolbell', cursive;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.hero-title{
+    padding: 20px 0px;
+    font-size: 64px;
+}
+
+.text{
+    color: #849499;
+    font-size: 18px;
+    font-weight: 400px;
+    padding-bottom: 30px;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btns button{
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #124756;
+    color: #FFF;
+}
+
+.btns button:hover{
+    color: white;
+    background: #FFA63A;
+}
+
+@media(max-width:1180px){
+    .hero-title{
+        font-size: 46px;
+    }
+}
+@media(max-width:1032px){
+    .hero-title{
+        font-size: 46px;
+    }
+}
+@media(max-width:1000px){
+    .myself{
+        font-size: 16px;
+    }
+    .hero-title{
+        font-size: 46px;
+    }
+}
+@media(max-width:960px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero-left{
+        width: 100%;
+        order: 2;
+    }
+    .hero-right{
+        width: 30%;
+        order: 1;
+    }
+    .hero-title{
+        padding: 10px 0px;
+        font-size: 34px;
+    }
+    .btns{
+      padding-top: 10px;
+    }
+}
+
+@media(max-width:580px){
+    .hero-right{
+      width: 45%;
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+}
+
+.statistic{
+   position: absolute;
+   bottom: -95px;
+   background: white;
+   border-radius: 30px;
+   box-shadow: 0px 73px 80px 0px rgba(0, 0, 0, 0.06);
+   padding: 50px;
+   left: 10%;
+}
+
+.statistic-title{
+    text-align: center;
+    color: #08546C;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.statistic-cards{
+   display: flex;
+   justify-content: space-between;
+}
+
+.statistic-card-count{
+    color: #08546C;
+    font-size: 26px;
+    text-align: center;
+}
+
+.statistic-card-text{
+    color: #08546C;
+    font-weight: 400;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.product{
+    padding: 150px 0px;
+}
+
+.product-info{
+    text-align: center;
+}
+
+.product-info p{
+    text-align: center;
+    border-bottom: 1px solid rgba(38, 90, 106, 1);
+    font-family: 'Schoolbell', cursive;
+    color: rgba(38, 90, 106, 1);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.product-title{
+    text-align: center;
+    font-size: 45px;
+    color: #08546C;
+    font-weight: 600;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+.product-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product-card{
+    padding: 10px;
+    box-shadow: 0px 41.77761px 33.42209px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.product-card:hover{
+    background: rgba(8, 84, 108, 1);
+    color: white;
+
+}
+
+.product-card-img{
+    padding: 5px;
+    background: white;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.product-card:hover .product-card-img{
+    background: rgb(255,168,0);
+}
+
+.product-card-title{
+    padding: 25px 0px;
+}
+
+@media(max-width:990){
+    .product-cards{
+        flex-wrap: wrap;
+    }
+    .product-card{
+        width: 45%;
+    }
+}
+
+.portfolio-text{
+    color: #08546C;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.portfolio-text-info{
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+
+.websites-text{
+    color: #08546C;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.websites-text-info{
+    color: #757575;
+font-size: 16px;
+width: 426px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+.web-a{
+    display: inline-block;
+}
+
+.web-b{
+    display: inline-block;
+}
+
+.Case{
+    color: rgba(8, 84, 108, 1);
+}
+
+.Case:hover{
+    color: rgba(255, 168, 0, 1)
+}
+
+@media(max-width:1045px){
+    .respond{
+        font-size: 10px;
+    }
+    .businesman-Musa{
+      flex-wrap: wrap;
+    }
+    .manage-img{
+        width: 99%;
+    }
+}
+
+
+.businesman-Musa{
+    display: flex;
+     align-items: center;
+}
+
+.businesman{
+    margin-top: 50px;
+    background: rgb(7,75,96);
+}
+
+.respond{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.Musa{
+    color: rgba(170, 191, 198, 1);
+}
